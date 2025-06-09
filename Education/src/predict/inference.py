@@ -5,10 +5,10 @@ import joblib
 from sklearn.metrics import (
     accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 )
-from src.data.make_dataset import preprocess_data
-from src.features.build_features import split_features_labels
+from Education.src.data.make_dataset import preprocess_data
+from Education.src.features.build_features import split_features_labels
 
-def load_model(model_path='src/models/xgb_model.pkl'):
+def load_model(model_path='Education/src/models/xgb_model.pkl'):
     return joblib.load(model_path)
 
 def evaluate_on_unseen(model, df: pd.DataFrame):
