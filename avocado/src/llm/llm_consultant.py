@@ -55,7 +55,7 @@ Ensure your suggestions are specific, practical, and understandable to  stakehol
 """
     headers = {
             "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY', '')}",
-            "HTTP-Referer": "https://consultbenny.streamlit.app/",  # Your app URL
+            "HTTP-Referer": "https://aiconsultantbenny.streamlit.app/",  # Your app URL
             "Content-Type": "application/json"
         }
     body = {
